@@ -192,6 +192,7 @@ namespace NtpClient
 			if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 			{
 				throw new PlatformNotSupportedException("Windows 전용 예시입니다. Linux는 timedatectl/chrony 등 사용 권장.");
+
 			}
 
 			EnsureSeSystemtimePrivilegeEnabled(); // 권한 활성
